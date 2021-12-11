@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #34D399;
+  --color-secondary: #9CA3AF;
+  --color-tertiaty: #99a0a3;
+}
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}

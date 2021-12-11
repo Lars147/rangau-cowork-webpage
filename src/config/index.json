@@ -1,0 +1,128 @@
+{
+  "company": {
+    "name": "React landing page 2021",
+    "logo": "/assets/images/rangau_coworking_logo.svg"
+  },
+  "navigation": [
+    {
+      "name": "Was ist Coworking?",
+      "href": "product"
+    },
+    {
+      "name": "Ziele",
+      "href": "features"
+    }
+  ],
+  "callToAction": {
+    "text": "Zur Umfrage",
+    "href": "http://umfrage.rangau-cowork.de/"
+  },
+  "mainHero": {
+    "title": "Coworking",
+    "subtitle": "ländlich gedacht.",
+    "description": "Wir sind eine Initiative, die sich für Coworking im Rangau einsetzt. Dabei möchten wir als Interessenspartner für die Bürger verstanden werden. Analysen, Gespräche und Veranstaltungen helfen uns die Richtung für Coworking-Orte zu finden.",
+    "img": "/assets/images/coworking-1-medium.jpg",
+    "primaryAction": {
+      "text": "Mehr Infos",
+      "href": "#product"
+    },
+    "secondaryAction": {
+      "text": "Kontakt",
+      "href": "mailto:info@rangau-cowork.de?subject=Ich möchte gerne mehr zu Rangau Cowork wissen!"
+    }
+  },
+  "product": {
+    "title": "Was ist Coworking?",
+    "items": [
+      {
+        "title": "Arbeitsplatz",
+        "description": "Coworking ist in erster Linie ein Arbeitsplatz.",
+        "img": "/assets/images/work.jpg"
+      },
+      {
+        "title": "Kontakt",
+        "description": "Kontakte sind wichtig.",
+        "img": "/assets/images/social.jpg"
+      }
+    ]
+  },
+  "features": {
+    "title": "Ziele",
+    "subtitle": "Unsere Visionen für das Coworking auf dem Land",
+    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "items": [
+      {
+        "name": "Lokal",
+        "description": "Wir möchten das Coworking auch außerhalb von Städten funktioniert. Gerade in ländlichen Regionen sind die Pendelwege viel weiter als in der Stadt.",
+        "svg": "",
+        "icon": "/assets/images/location-marker.svg"
+      },
+      {
+        "name": "Digital",
+        "description": "Digitale Konzepte sind uns wichtig. Deshalb möchten wir beraten und unterstützen bei der digitalen Lösung von Problemstellungen.",
+        "icon": "/assets/images/chip.svg"
+      },
+      {
+        "name": "Regional",
+        "description": "Wir glauben, dass Coworking Projekte auf dem Land nur in der Gemeinschaft funktionieren. Deshalb setzen wir uns dafür ein, dass die Einwohner vor Ort in die Entwicklung einbezogen werden.",
+        "icon": "/assets/images/chat-alt-2.svg"
+      },
+      {
+        "name": "Nachhaltig",
+        "description": "Für uns ist Nachhaltigkeit nicht nur ein Trend. Wir setzen uns dafür ein, dass Projekte auf Dauer funktionieren.",
+        "svg": "",
+        "icon": "/assets/images/globe.svg"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "items": [
+      {
+        "name": "Free",
+        "price": "$0",
+        "priceDetails": "for one user",
+        "features": [
+          "1 user",
+          "Basic Support",
+          "1 GB of storage",
+          "Email support"
+        ]
+      },
+      {
+        "name": "Pro",
+        "price": "$15",
+        "priceDetails": "per user",
+
+        "features": [
+          "5 users",
+          "Priority Support",
+          "10 GB of storage",
+          "Phone and Email support"
+        ]
+      },
+      {
+        "name": "Enterprise",
+        "price": "$29",
+        "priceDetails": "per user",
+        "features": [
+          "50 users",
+          "24/7 Support",
+          "100 GB of storage",
+          "Phone and Email support"
+        ]
+      }
+    ]
+  },
+  "about": {
+    "sections": [
+      {
+        "name": "Zur Umfrage",
+        "href": "https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform"
+      }
+    ],
+    "socialMedia": {
+      "github": "https://github.com/rangau-cowork"
+    }
+  }
+}
