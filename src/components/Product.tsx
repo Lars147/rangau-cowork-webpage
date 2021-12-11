@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import config from "../config/index.json";
-import Divider from "./Divider";
+import config from '../config/index.json';
+import Divider from './Divider';
 
 const Product = () => {
   const { product } = config;
@@ -12,12 +12,12 @@ const Product = () => {
         <h1
           className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
         >
-          {product.title.split(" ").map((word, index) => (
+          {product.title.split(' ').map((word, index) => (
             <span
               key={index}
-              className={index === 2 ? "text-primary" : "text-border"}
+              className={index === 2 ? 'text-primary' : 'text-border'}
             >
-              {word}{" "}
+              {word}{' '}
             </span>
           ))}
         </h1>
@@ -25,9 +25,16 @@ const Product = () => {
         {product.items.map((item, index) => {
           if (index % 2) {
             return (
-              <div className={`flex flex-wrap flex-col-reverse sm:flex-row`}>
+              <div
+                className={`flex flex-wrap flex-col-reverse sm:flex-row`}
+                key={index}
+              >
                 <div className={`w-full sm:w-1/2 p-6`}>
-                  <img className="h-6/6 rounded-md" src={item.img} alt={item.title} />
+                  <img
+                    className="h-6/6 rounded-md"
+                    src={item.img}
+                    alt={item.title}
+                  />
                 </div>
                 <div className={`w-full sm:w-1/2 p-6 mt-20`}>
                   <div className={`align-middle`}>
@@ -43,7 +50,7 @@ const Product = () => {
             );
           }
           return (
-            <div className={`flex flex-wrap`}>
+            <div className={`flex flex-wrap`} key={index}>
               <div className={`w-5/6 sm:w-1/2 p-6 mt-20`}>
                 <h3
                   className={`text-3xl text-gray-800 font-bold leading-none mb-3`}
