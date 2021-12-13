@@ -36,24 +36,29 @@
     "items": [
       {
         "title": "Arbeitsplatz",
-        "description": "Coworking ist in erster Linie ein Arbeitsplatz.",
+        "description": "Coworking ist für uns mehr als nur ein mobiler Arbeitsplatz. Wir verknüpfen Produktivität mit Wohlfühlfaktor und Büroatmosphäre mit Community, um ganzheitliche Orte des gemeinsamen Arbeitens zu schaffen.",
         "img": "/assets/images/work.jpg"
       },
       {
         "title": "Kontakt",
-        "description": "Kontakte sind wichtig.",
+        "description": "Beziehungen sind Katalysatoren für erfolgreiches Arbeiten. Wir sind davon überzeugt, dass ein funktionales soziales Netzwerk die Kreativität beflügelt und langfristig Mehrwert schafft. Coworking gibt Menschen die Möglichkeit, lokal miteinander in Austausch zu treten um so kreativ Lösungen für Probleme zu finden.",
         "img": "/assets/images/social.jpg"
+      },
+      {
+        "title": "Ausstattung",
+        "description": "Ein mobiler Arbeitsplatz muss allen Anforderungen des modernen Arbeitens gerecht werden. Das New Work-Ethos verlangt nach flexiblen Lösungen für Arbeitsplätze, Konferenzen und Rückzugsorte. Coworking-Spaces werden diesen vielfältigen Bedürfnissen gerecht und ermöglichen so produktives Arbeiten für unterschiedlichste Berufsgruppen.",
+        "img": "/assets/images/equipment-small.jpg"
       }
     ]
   },
   "features": {
     "title": "Ziele",
     "subtitle": "Unsere Visionen für das Coworking auf dem Land",
-    "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.",
+    "description": "In Städten ist Coworking längst etabliert. Das Coworking auf dem Land bietet noch deutlich größeres Potential für Bürgerinnen und Bürger, bringt jedoch auch neue Herausforderungen. Wir kennen die Bedürfnisse und stehen als Ansprechpartner zur Verfügung.",
     "items": [
       {
         "name": "Lokal",
-        "description": "Wir möchten das Coworking auch außerhalb von Städten funktioniert. Gerade in ländlichen Regionen sind die Pendelwege viel weiter als in der Stadt.",
+        "description": "Wir wissen, wie Coworking auch außerhalb von Städten funktioniert. Eine gute Anbindung an die lokale Wirtschaft ist ein Kernfaktor zum Erfolg.",
         "svg": "",
         "icon": "/assets/images/location-marker.svg"
       },
@@ -113,6 +118,15 @@
         ]
       }
     ]
+  },
+  "cta_section": {
+    "title": "Es gibt keine Standardlösungen.",
+    "subtitle": "Wir möchten Ihnen helfen ihre individuellen Lösung zu finden!",
+    "description": "Wenn es um die perfekte Arbeitsumgebung geht, gibt es keine Standardlösungen. Jede Kommune hat ihre eigenen Anforderungen an flexible Arbeitsorte. Als Interessenspartner möchten wir mit unseren Kompetenzen die Bedürfnisse der Bürger verstehen und als Vermittler zwischen Unternehmern, lokaler Politik und Ortsgemeinschaft dienen.",
+    "button": {
+      "text": "Kontakt",
+      "href": "mailto:info@rangau-cowork.de?subject=Ich möchte gerne mehr zu Rangau Cowork wissen!"
+    }
   },
   "about": {
     "sections": [
