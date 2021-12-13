@@ -3,6 +3,9 @@ module.exports = {
   purge: ['./src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false,
   theme: {
+    minHeight: {
+      '1/2': '80%'
+    },
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
