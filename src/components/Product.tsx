@@ -22,7 +22,7 @@ const Product = () => {
           ))}
         </h1>
         <Divider />
-        <div className='mt-20 space-y-10'>
+        <div className={`mt-20 space-y-10`}>
           {product.items.map((item, index) => {
             if (index % 2) {
               return (
