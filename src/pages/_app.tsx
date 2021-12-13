@@ -6,6 +6,7 @@ import '../styles/main.css';
 import About from '../components/About';
 import Analytics from '../components/Analytics';
 import Canvas from '../components/Canvas';
+import CallToAction from '../components/CallToAction';
 import Features from '../components/Features';
 import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
@@ -50,6 +51,11 @@ const App = () => {
           <Pricing />
           <Canvas />
         </LazyShow> */}
+        <LazyShow>
+          <>
+            <CallToAction />
+          </>
+        </LazyShow>
         <LazyShow>
           <>
             <About />
