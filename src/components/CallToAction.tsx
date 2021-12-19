@@ -12,7 +12,7 @@ const CallToAction = () => {
           <div>
             <h1 className="text-3xl font-bold md:text-4xl">
               <span className="block text-gray-900">{title}</span>
-              <span className="block text-primary">{subtitle}</span>
+              <span className="block text-green-400">{subtitle}</span>
             </h1>
             <p className="max-w-lg mt-2.5 text-gray-500 md:text-lg">
               {description}
@@ -21,7 +21,7 @@ const CallToAction = () => {
           <div className="mt-5 lg:mt-0 lg:ml-5 space-y-2.5 sm:flex sm:flex-shrink-0 sm:space-y-0 sm:space-x-2.5">
             <a
               href={button.href}
-              className="block px-5 py-3 rounded text-center font-medium text-white bg-primary"
+              className="block px-5 py-3 rounded text-center font-medium text-white bg-green-400"
             >
               {button.text}
             </a>

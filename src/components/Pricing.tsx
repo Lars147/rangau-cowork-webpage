@@ -9,15 +9,15 @@ const Pricing = () => {
 
   return (
     <section className={`bg-background py-8`} id="pricing">
-      <div className={`container mx-auto px-2 pt-4 pb-12 text-primary`}>
+      <div className={`container mx-auto px-2 pt-4 pb-12 text-green-400`}>
         <h1
-          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-primary`}
+          className={`w-full my-2 text-5xl font-bold leading-tight text-center text-green-400`}
         >
           {title}
         </h1>
         <div className={`w-full mb-4`}>
           <div
-            className={`h-1 mx-auto bg-primary w-64 opacity-25 my-0 py-0 rounded-t`}
+            className={`h-1 mx-auto bg-green-400 w-64 opacity-25 my-0 py-0 rounded-t`}
           ></div>
         </div>
         <div
@@ -64,7 +64,7 @@ const Pricing = () => {
                 {secondPlan?.name}
               </div>
               <div
-                className={`h-1 w-full bg-primary my-0 py-0 rounded-t`}
+                className={`h-1 w-full bg-green-400 my-0 py-0 rounded-t`}
               ></div>
               <ul className={`w-full text-center text-base font-bold`}>
                 {secondPlan?.features.map((feature) => (
@@ -87,7 +87,7 @@ const Pricing = () => {
             </div>
           </div>
           <div
-            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-primary mt-4`}
+            className={`flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-green-400 mt-4`}
           >
             <div
               className={`flex-1 bg-background text-gray-600 rounded-t rounded-b-none overflow-hidden shadow`}

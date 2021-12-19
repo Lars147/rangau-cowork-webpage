@@ -21,7 +21,7 @@ const About = () => {
             <a
               key={`${section.name}-${index}`}
               href={section.href}
-              className="hover:text-primary text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
+              className="hover:text-green-400 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white"
             >
               {section.name}
             </a>
@@ -35,7 +35,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-gray-800 dark:text-white hover:text-green-400"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -52,7 +52,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-gray-800 dark:text-white hover:text-green-400"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -69,7 +69,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-primary"
+              className="fill-current text-gray-800 dark:text-white hover:text-green-400"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
