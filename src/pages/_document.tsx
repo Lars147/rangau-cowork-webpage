@@ -6,8 +6,6 @@ import Document, {
   NextScript,
 } from 'next/document';
 
-import SimpleBanner from '../components/Banner';
-
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -41,7 +39,6 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
         </Head>
         <body>
-          <SimpleBanner />
           <Main />
           <NextScript />
         </body>
