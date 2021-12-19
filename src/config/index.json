@@ -3,6 +3,11 @@
     "name": "React landing page 2021",
     "logo": "/assets/images/rangau_coworking_logo.svg"
   },
+  "banner": {
+    "enabled": true,
+    "closable": true,
+    "text": "Zur Coworking Umfrage"
+  },
   "navigation": [
     {
       "name": "Was ist Coworking?",
