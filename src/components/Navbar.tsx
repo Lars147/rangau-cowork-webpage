@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav
-      className="flex py-3 px-5 text-gray-700 bg-gray-50 rounded-lg border border-gray-200"
+      className="flex py-3 px-5 text-gray-700 bg-gray-50 border border-gray-200"
       aria-label="Breadcrumb"
     >
       <ol className="max-w-7xl mx-auto inline-flex space-x-1 md:space-x-3">
