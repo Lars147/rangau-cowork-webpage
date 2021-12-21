@@ -2,7 +2,7 @@ import React from 'react';
 
 const Survey = () => {
   return (
-    <div className="content-center bg-green-50">
+    <div className="content-center bg-emerald-50">
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?embedded=true"
         width="100%"

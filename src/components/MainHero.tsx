@@ -12,7 +12,7 @@ const MainHero = () => {
         <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
           <span className="block xl:inline">{mainHero.title}</span>
           <br />
-          <span className={`block text-green-400 xl:inline`}>
+          <span className={`block text-emerald-400 xl:inline`}>
             {mainHero.subtitle}
           </span>
         </h1>
@@ -23,7 +23,7 @@ const MainHero = () => {
           <div className="rounded-md shadow">
             <Link href={mainHero.primaryAction.href} passHref>
               <a
-                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-green-400 hover:bg-border hover:text-green-400 md:py-4 md:text-lg md:px-10 shadow-md`}
+                className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-background bg-emerald-400 hover:bg-border hover:text-emerald-400 md:py-4 md:text-lg md:px-10 shadow-md`}
               >
                 {mainHero.primaryAction.text}
               </a>
@@ -32,7 +32,7 @@ const MainHero = () => {
           <div className="mt-3 sm:mt-0 sm:ml-3">
             <a
               href={mainHero.secondaryAction.href}
-              className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-green-400 text-secondary bg-background hover:bg-border hover:text-green-400 md:py-4 md:text-lg md:px-10 shadow-md`}
+              className={`w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-emerald-400 text-secondary bg-background hover:bg-border hover:text-emerald-400 md:py-4 md:text-lg md:px-10 shadow-md`}
             >
               {mainHero.secondaryAction.text}
             </a>

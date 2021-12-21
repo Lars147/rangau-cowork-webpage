@@ -28,7 +28,7 @@ const Menu = () => {
             className="relative flex items-center justify-between sm:h-10 lg:justify-start"
             aria-label="Global"
           >
-            <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div className="flex items-center grow shrink-0 lg:grow-0">
               <div className="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span className="sr-only">{companyName}</span>
@@ -61,7 +61,7 @@ const Menu = () => {
               ))}
               <a
                 href={callToAction.href}
-                className={`font-medium text-green-400 hover:text-gray-400`}
+                className={`font-medium text-emerald-400 hover:text-gray-400`}
               >
                 {callToAction.text}
               </a>
@@ -111,7 +111,7 @@ const Menu = () => {
               </div>
               <a
                 href={callToAction.href}
-                className={`block w-full px-5 py-3 text-center font-medium text-green-400 bg-gray-50 hover:bg-gray-100`}
+                className={`block w-full px-5 py-3 text-center font-medium text-emerald-400 bg-gray-50 hover:bg-gray-100`}
               >
                 {callToAction.text}
               </a>

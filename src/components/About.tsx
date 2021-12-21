@@ -21,7 +21,7 @@ const About = () => {
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
           {sections.map((section, index) => (
             <Link key={`${section.name}-${index}`} href={section.href} passHref>
-              <a className="hover:text-green-400 text-base cursor-pointer leading-4 text-gray-800 dark:text-gray-400 dark:hover:text-white">
+              <a className="hover:text-emerald-400 text-base cursor-pointer leading-4 text-gray-800">
                 {section.name}
               </a>
             </Link>
@@ -35,7 +35,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-green-400"
+              className="fill-current text-gray-800 hover:text-emerald-400"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -52,7 +52,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-green-400"
+              className="fill-current text-gray-800 hover:text-emerald-400"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -69,7 +69,7 @@ const About = () => {
             rel="noreferrer"
           >
             <svg
-              className="fill-current text-gray-800 dark:text-white hover:text-green-400"
+              className="fill-current text-gray-800 hover:text-emerald-400"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -80,7 +80,7 @@ const About = () => {
           </a> */}
         </div>
         <div className="flex items-center mt-6">
-          <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
+          <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900">
             &copy; {new Date().getFullYear()} designed by{' '}
             <a href="https://github.com/rangau-cowork" rel="nofollow">
               Rangau Cowork

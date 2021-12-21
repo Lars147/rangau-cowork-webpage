@@ -1,7 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false,
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     minHeight: {
       '1/2': '80%',
@@ -44,6 +42,5 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [],
 };
