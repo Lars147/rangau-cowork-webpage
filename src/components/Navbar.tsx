@@ -1,6 +1,14 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+  const router = useRouter();
+  const routerPath = router.pathname; // e.g. /imprint
+  const routerPathWithoutSlash = routerPath.substring(1); // e.g. imprint
+  const routerPathCleaned =
+    routerPathWithoutSlash.charAt(0).toUpperCase() +
+    routerPathWithoutSlash.slice(1); // e.g. imprint
+
   return (
     <nav
       className="flex py-3 px-5 text-gray-700 bg-gray-50 border border-gray-200"
@@ -37,7 +45,7 @@ const Navbar = () => {
               />
             </svg>
             <span className="ml-1 text-sm font-medium text-gray-400 md:ml-2">
-              Umfrage
+              {routerPathCleaned}
             </span>
           </div>
         </li>
