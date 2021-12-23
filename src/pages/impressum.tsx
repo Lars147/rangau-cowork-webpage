@@ -26,7 +26,7 @@ const Imprint = () => {
               <br />
               91459 Markt Erlbach
               <br />
-              jonas.miederer@outlook.com
+              jonas.miederer@rangau-cowork.com
             </p>
             <div className="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
               <div className="pt-10 pb-3">
