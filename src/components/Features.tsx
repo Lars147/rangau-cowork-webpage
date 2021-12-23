@@ -26,8 +26,8 @@ const Features = () => {
             <div
               className={
                 showAllDescription
-                  ? 'hidden text-sm text-green-400 hover:underline cursor-pointer'
-                  : 'text-sm text-green-400 hover:underline cursor-pointer'
+                  ? 'hidden text-sm text-emerald-400 hover:underline cursor-pointer'
+                  : 'text-sm text-emerald-400 hover:underline cursor-pointer'
               }
               onClick={() => setShowAllDescription(!showAllDescription)}
             >
@@ -47,8 +47,8 @@ const Features = () => {
             <div
               className={
                 showAllDescription
-                  ? 'text-sm text-green-400 hover:underline cursor-pointer'
-                  : 'hidden text-sm text-green-400 hover:underline cursor-pointer'
+                  ? 'text-sm text-emerald-400 hover:underline cursor-pointer'
+                  : 'hidden text-sm text-emerald-400 hover:underline cursor-pointer'
               }
               onClick={() => setShowAllDescription(!showAllDescription)}
             >
