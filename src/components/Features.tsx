@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import config from '../config/index.json';
 
 const Features = () => {
+  const [showAllDescription, setShowAllDescription] = useState(false);
+
   const { features } = config;
-  const { title, subtitle, description, items: featuresList } = features;
+  const { title, subtitle, items: featuresList } = features;
   return (
     <div className={`py-12 bg-background min-h-1/2`} id="features">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,7 +20,40 @@ const Features = () => {
             {subtitle}
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            {description}
+            In Städten ist Coworking längst etabliert. Coworking auf dem Land
+            bietet viel unerschöpftes Potential. Gerade im Rangau fehlt ein
+            solches zukunftsweisendes Angebot bisher.
+            <div
+              className={
+                showAllDescription
+                  ? 'hidden text-sm text-green-400 hover:underline cursor-pointer'
+                  : 'text-sm text-green-400 hover:underline cursor-pointer'
+              }
+              onClick={() => setShowAllDescription(!showAllDescription)}
+            >
+              Mehr...
+            </div>
+            <div className={showAllDescription ? '' : 'hidden'}>
+              Die Bedürfnisse der beteiligten Akteure sind jedoch vielfältig und
+              bringen deshalb ein breites Spektrum an Herausforderungen mit
+              sich. Die Interessen von Nutzern, Gründern und Betreibern haben
+              für uns die gleiche Relevanz wie die Belange von Politik und
+              Zivilgesellschaft. Auch Investoren und Unternehmen auf der Suche
+              nach Arbeitsorten für ihre Angestellten binden wir aktiv ein.
+              <br />
+              Wir kennen die Wünsche aller Beteiligten und bieten Lösungen für
+              deren spezifische Anforderungen zum Coworking im Rangau.
+            </div>
+            <div
+              className={
+                showAllDescription
+                  ? 'text-sm text-green-400 hover:underline cursor-pointer'
+                  : 'hidden text-sm text-green-400 hover:underline cursor-pointer'
+              }
+              onClick={() => setShowAllDescription(!showAllDescription)}
+            >
+              Weniger...
+            </div>
           </p>
         </div>
 
