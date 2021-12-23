@@ -107,7 +107,7 @@ export default function TeamSection() {
                 <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                   <div className="font-medium text-lg leading-6 space-y-1">
                     <h3 className="text-white">Tim Oberländer</h3>
-                    <p className="text-emerald-400">Neuhof</p>
+                    <p className="text-emerald-400">Neuhof a. d. Zenn</p>
                   </div>
 
                   <ul role="list" className="flex justify-center space-x-5">
