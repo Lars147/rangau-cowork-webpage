@@ -27,9 +27,9 @@
     "href": "teamsection"
   },
   "mainHero": {
-    "title": "Coworking",
-    "subtitle": "ländlich gedacht.",
-    "description": "Wir sind eine Initiative, die sich für Coworking im Rangau einsetzt. Dabei möchten wir als Interessenspartner für die Bürger verstanden werden. Analysen, Gespräche und Veranstaltungen helfen uns die Richtung für Coworking-Orte zu finden.",
+    "title": "Coworking. Ländlich gedacht.",
+    "subtitle": "Für den Rangau gemacht.",
+    "description": "Wir sind eine Initiative, die sich für Coworking im Rangau stark macht. Dabei verstehen wir uns als zentraler Ansprechpartner für alle Coworking-Begeisterten der Region. Durch Analysen, Gespräche und Veranstaltungen evaluieren wir vorhandene Potenziale und unterstützen aufkeimende Initiativen.",
     "img": "/assets/images/coworking-1-medium.jpg",
     "primaryAction": {
       "text": "Mehr Infos",
@@ -50,20 +50,20 @@
       },
       {
         "title": "Kontakt",
-        "description": "Beziehungen sind Katalysatoren für erfolgreiches Arbeiten. Wir sind davon überzeugt, dass ein funktionales soziales Netzwerk die Kreativität beflügelt und langfristig Mehrwert schafft. Coworking gibt Menschen die Möglichkeit, lokal miteinander in Austausch zu treten um so kreativ Lösungen für Probleme zu finden.",
+        "description": "Beziehungen sind Katalysatoren für erfolgreiches Arbeiten. Wir sind davon überzeugt, dass ein heterogenes soziales Netzwerk die Kreativität beflügelt und langfristig Mehrwert schafft. Coworking gibt Menschen die Möglichkeit, sich lokal miteinander zu vernetzen. Über Unternehmensgrenzen hinweg entstehen so kreative Problemlösungen.",
         "img": "/assets/images/social.jpg"
       },
       {
         "title": "Ausstattung",
-        "description": "Ein mobiler Arbeitsplatz muss allen Anforderungen des modernen Arbeitens gerecht werden. Das New Work-Ethos verlangt nach flexiblen Lösungen für Arbeitsplätze, Konferenzen und Rückzugsorte. Coworking-Spaces werden diesen vielfältigen Bedürfnissen gerecht und ermöglichen so produktives Arbeiten für unterschiedlichste Berufsgruppen.",
+        "description": "Ein Arbeitsplatz muss heute allen Anforderungen der modernen Arbeitswelt gerecht werden. Diese verlangt nach flexiblen Lösungen sowohl für fokussiertes Arbeiten und konstruktive Meetings als auch für zwischenmenschliche Begegnungen und gemeinschaftliches Miteinander. Coworking-Spaces werden diesen vielfältigen Bedürfnissen gerecht und ermöglichen so produktives Schöpfen für unterschiedlichste Berufsgruppen.",
         "img": "/assets/images/equipment-small.jpg"
       }
     ]
   },
   "features": {
     "title": "Ziele",
-    "subtitle": "Unsere Visionen für das Coworking auf dem Land",
-    "description": "In Städten ist Coworking längst etabliert. Das Coworking auf dem Land bietet noch deutlich größeres Potential für Bürgerinnen und Bürger, bringt jedoch auch neue Herausforderungen. Wir kennen die Bedürfnisse und stehen als Ansprechpartner zur Verfügung.",
+    "subtitle": "Unsere Vision für das Coworking im Rangau",
+    "description": "In Städten ist Coworking längst etabliert. Coworking auf dem Land bietet viel unerschöpftes Potential. Gerade im Rangau fehlt ein solches zukunftsweisendes Angebot bisher. Die Bedürfnisse der beteiligten Akteure sind jedoch vielfältig und bringen deshalb ein breites Spektrum an Herausforderungen mit sich. Die Interessen von Nutzern, Gründern und Betreibern haben für uns die gleiche Relevanz wie die Belange von Politik und Zivilgesellschaft. Auch Investoren und Unternehmen auf der Suche nach Arbeitsorten für ihre Angestellten binden wir aktiv ein. Wir kennen die Wünsche aller Beteiligten und bieten Lösungen für deren spezifische Anforderungen zum Coworking im Rangau.",
     "items": [
       {
         "name": "Lokal",
@@ -77,7 +77,7 @@
         "icon": "/assets/images/chip.svg"
       },
       {
-        "name": "Regional",
+        "name": "Gemeinschaft",
         "description": "Wir glauben, dass Coworking Projekte auf dem Land nur in der Gemeinschaft funktionieren. Deshalb setzen wir uns dafür ein, dass die Einwohner vor Ort in die Entwicklung einbezogen werden.",
         "icon": "/assets/images/chat-alt-2.svg"
       },
@@ -129,9 +129,9 @@
     ]
   },
   "ctaSection": {
-    "title": "Es gibt keine Standardlösungen.",
-    "subtitle": "Wir möchten Ihnen helfen ihre individuellen Lösung zu finden!",
-    "description": "Wenn es um die perfekte Arbeitsumgebung geht, gibt es keine Standardlösungen. Jede Kommune hat ihre eigenen Anforderungen an flexible Arbeitsorte. Als Interessenspartner möchten wir mit unseren Kompetenzen die Bedürfnisse der Bürger verstehen und als Vermittler zwischen Unternehmern, lokaler Politik und Ortsgemeinschaft dienen.",
+    "title": "Fragen?",
+    "subtitle": "Wir haben die Antworten!",
+    "description": "Wir sind engagierter Partner aller coworking-interessierten Gruppen in der Region. Richten Sie Ihre Fragen und Anliegen zum Coworking an uns - Gemeinsam treiben wir die Entwicklung von Coworking-Spaces im Rangau voran!",
     "button": {
       "text": "Kontakt",
       "href": "mailto:info@rangau-cowork.de?subject=Ich möchte gerne mehr zu Rangau Cowork wissen!"
@@ -142,6 +142,10 @@
       {
         "name": "Zur Umfrage",
         "href": "umfrage/"
+      },
+      {
+        "name": "Impressum",
+        "href": "impressum/"
       }
     ],
     "socialMedia": {
