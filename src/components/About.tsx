@@ -21,7 +21,10 @@ const About = () => {
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
           {sections.map((section, index) => (
             <Link key={`${section.name}-${index}`} href={section.href} passHref>
-              <a className="hover:text-emerald-400 text-base cursor-pointer leading-4 text-gray-800">
+              <a
+                className="hover:text-emerald-400 text-base cursor-pointer leading-4 text-gray-800"
+                target={section.href.startsWith('http') ? '_blank' : '_self'}
+              >
                 {section.name}
               </a>
             </Link>
