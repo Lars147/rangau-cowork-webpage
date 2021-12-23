@@ -16,11 +16,15 @@
     {
       "name": "Ziele",
       "href": "features"
+    },
+    {
+      "name": "Unser Team",
+      "href": "team_section"
     }
   ],
   "callToAction": {
-    "text": "Zur Umfrage",
-    "href": "umfrage/"
+    "text": "Unser Team",
+    "href": "teamsection"
   },
   "mainHero": {
     "title": "Coworking",

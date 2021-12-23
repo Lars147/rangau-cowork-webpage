@@ -14,6 +14,7 @@ import MainHero from '../components/MainHero';
 import MainHeroImage from '../components/MainHeroImage';
 // import Pricing from "../components/Pricing";
 import Product from '../components/Product';
+import TeamSection from '../components/TeamSection';
 
 const App = () => {
   return (
@@ -55,6 +56,11 @@ const App = () => {
         <LazyShow>
           <>
             <CallToAction />
+          </>
+        </LazyShow>
+        <LazyShow>
+          <>
+            <TeamSection />
           </>
         </LazyShow>
         <LazyShow>
