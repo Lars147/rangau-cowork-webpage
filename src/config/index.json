@@ -32,8 +32,9 @@
     "description": "Wir sind eine Initiative, die sich für Coworking im Rangau stark macht. Dabei verstehen wir uns als zentraler Ansprechpartner für alle Coworking-Begeisterten der Region. Durch Analysen, Gespräche und Veranstaltungen evaluieren wir vorhandene Potenziale und unterstützen aufkeimende Initiativen.",
     "img": "/assets/images/coworking-1-medium.jpg",
     "primaryAction": {
-      "text": "Mehr Infos",
-      "href": "#product"
+      "text": "Zur Umfrage",
+      "target": "_blank",
+      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?usp=sf_link"
     },
     "secondaryAction": {
       "text": "Kontakt",
