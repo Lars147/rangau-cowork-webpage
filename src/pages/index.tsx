@@ -3,7 +3,6 @@ import React from 'react';
 import Head from 'next/head';
 
 import About from '../components/About';
-import Analytics from '../components/Analytics';
 import SimpleBanner from '../components/Banner';
 import CallToAction from '../components/CallToAction';
 import Canvas from '../components/Canvas';
@@ -68,7 +67,6 @@ const App = () => {
             <About />
           </>
         </LazyShow>
-        <Analytics />
       </div>
     </>
   );
