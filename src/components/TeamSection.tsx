@@ -61,13 +61,13 @@ export default function TeamSection() {
               <div className="space-y-6 xl:space-y-10">
                 <img
                   className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56"
-                  src="/assets/images/rangau_coworking_logo.png"
+                  src="/assets/images/team_lukas.jpg"
                   alt=""
                 />
                 <div className="space-y-2 xl:flex xl:items-center xl:justify-between">
                   <div className="font-medium text-lg leading-6 space-y-1">
                     <h3 className="text-white">Lukas Engel</h3>
-                    <p className="text-emerald-400">Rimbach</p>
+                    <p className="text-emerald-400">Markt Erlbach</p>
                   </div>
 
                   <ul role="list" className="flex justify-center space-x-5">
