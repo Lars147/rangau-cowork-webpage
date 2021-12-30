@@ -19,7 +19,11 @@ const App = () => {
   return (
     <>
       <Head>
-        <title>Rangau Cowork</title>
+        <title>Rangau Cowork - Coworking ländlich gedacht für den Rangau</title>
+        <meta
+          name="description"
+          content="Eine Initiative, die sich für Coworking im Rangau stark macht. Für alle Coworking-Begeisterten der Region. Analysen, Gespräche und Veranstaltungen!"
+        />
       </Head>
       <SimpleBanner />
       <div className={`bg-background grid gap-y-16 overflow-hidden`}>
