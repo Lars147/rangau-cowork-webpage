@@ -29,22 +29,18 @@ const Imprint = () => {
               jonas.miederer@rangau-cowork.com
             </p>
             <div className="mt-6 prose prose-green prose-lg text-gray-500 mx-auto">
-              <div className="pt-10 pb-3">
-                <h2 className="text-xl text-gray-900 font-bold">
-                  Verantwortungsbereich
-                </h2>
+              <h2 className="text-xl text-gray-900 font-bold">
+                Verantwortungsbereich
+              </h2>
 
-                <p>
-                  Das vorliegende Impressum gilt für den Internet-Auftritt unter
-                  folgender Domain: www.rangau-cowork.de
-                </p>
-              </div>
+              <p>
+                Das vorliegende Impressum gilt für den Internet-Auftritt unter
+                folgender Domain: www.rangau-cowork.de
+              </p>
 
-              <div className="pt-10 pb-3">
-                <h2 className="text-xl text-gray-900 font-bold">
-                  Haftungsausschluss
-                </h2>
-              </div>
+              <h2 className="text-xl text-gray-900 font-bold">
+                Haftungsausschluss
+              </h2>
 
               <p>
                 Ich, der Betreiber diese Seite, nehme den Schutz Ihrer
@@ -58,11 +54,9 @@ const Imprint = () => {
                 werden.
               </p>
 
-              <div className="pt-10 pb-3">
-                <h2 className="text-xl text-gray-900 font-bold">
-                  Haftung für Inhalte
-                </h2>
-              </div>
+              <h2 className="text-xl text-gray-900 font-bold">
+                Haftung für Inhalte
+              </h2>
 
               <p>
                 Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
@@ -86,11 +80,9 @@ const Imprint = () => {
                 Inhalte umgehend entfernen.
               </p>
 
-              <div className="pt-10 pb-3">
-                <h2 className="text-xl text-gray-900 font-bold">
-                  Haftung für Links
-                </h2>
-              </div>
+              <h2 className="text-xl text-gray-900 font-bold">
+                Haftung für Links
+              </h2>
 
               <p>
                 Unser Angebot enthält Links zu externen Webseiten Dritter, auf
@@ -107,11 +99,7 @@ const Imprint = () => {
                 umgehend entfernen.
               </p>
 
-              <div className="pt-10 pb-3">
-                <h2 className="text-xl text-gray-900 font-bold">
-                  Urheberrecht
-                </h2>
-              </div>
+              <h2 className="text-xl text-gray-900 font-bold">Urheberrecht</h2>
 
               <p>
                 Die Betreiber der Seiten sind bemüht, stets die Urheberrechte
@@ -126,9 +114,7 @@ const Imprint = () => {
                 nicht kommerziellen Gebrauch gestattet.
               </p>
 
-              <div className="pt-10 pb-3">
-                <h2 className="text-xl text-gray-900 font-bold">Datenschutz</h2>
-              </div>
+              <h2 className="text-xl text-gray-900 font-bold">Datenschutz</h2>
 
               <p>
                 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten
