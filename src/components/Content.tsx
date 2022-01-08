@@ -505,7 +505,9 @@ export default function Content() {
             <HighlightText text="aus Markt Erlbach" /> oder einer direkten
             Nachbargemeinde.
           </p>
-          <h3 id="age" className="pt-12">Alter</h3>
+          <h3 id="age" className="pt-12">
+            Alter
+          </h3>
           <div className="h-96">
             <GreenBar
               data={dataAgeBar}
@@ -534,7 +536,9 @@ export default function Content() {
             und 40 Jahre alt. Das Durchschnittsalter aller Teilnehmer liegt bei{' '}
             <HighlightText text="34 Jahren" />.
           </p>
-          <h3 id="employment" className="pt-12">Beschäftigung</h3>
+          <h3 id="employment" className="pt-12">
+            Beschäftigung
+          </h3>
           <div className="h-96">
             <GreenPie data={dataEmploymentPie} />
           </div>
@@ -667,7 +671,9 @@ export default function Content() {
             <HighlightText text="Location (Architektur, Lage)" /> eine hohe
             Relevanz hat.
           </p>
-          <h3 id="interest-coworking" className="pt-12">Interesse bzgl. Coworking-Nutzung</h3>
+          <h3 id="interest-coworking" className="pt-12">
+            Interesse bzgl. Coworking-Nutzung
+          </h3>
           <div className="h-96">
             <GreenPie
               data={dataCoworkingPie}
@@ -697,8 +703,10 @@ export default function Content() {
             . Zusätzlich entfallen <HighlightText text="18%" /> auf{' '}
             <HighlightText text="Online-Meetings" />.
           </p>
-          <h3 id="expectations-coworking">Erwartungen an Coworking</h3>
-          <div className="h-96" className="pt-12">
+          <h3 id="expectations-coworking" className="pt-12">
+            Erwartungen an Coworking
+          </h3>
+          <div className="h-96">
             <GreenPie
               data={dataExpectationsCoworkingPie}
               legendPosition="bottom-left"
