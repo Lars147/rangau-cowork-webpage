@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { nivoGreensReversed, GreenBar, GreenPie } from './Charts';
 
 const dataResidentPie = [
@@ -127,11 +129,6 @@ const dataSatisfactionBar1 = [
   {
     ageRange: 'Lautstärke',
     frequency: 18,
-    frequencyColor: 'hsl(158, 64%, 52%)',
-  },
-  {
-    ageRange: 'Zufrieden',
-    frequency: 19,
     frequencyColor: 'hsl(158, 64%, 52%)',
   },
   {
@@ -293,10 +290,19 @@ const dataSupportEmployeerPie = [
   },
 ];
 
-function LinkInPage({ href, text }: { href: string; text: string }) {
+function LinkInPage({
+  href,
+  target = '_self',
+  text,
+}: {
+  href: string;
+  target?: string;
+  text: string;
+}) {
   return (
     <a
       href={href}
+      target={target}
       className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
     >
       {text}
@@ -421,7 +427,7 @@ export default function Content() {
               Auswertung
             </span>
             <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Coworking Umfrage 2022
+              Coworking Umfrage 2021/22
             </span>
           </h1>
           <p className="mt-8 text-xl text-gray-500 leading-8">
@@ -429,9 +435,8 @@ export default function Content() {
             erfasst. <br />
             Die Teilnahme ist weiterhin{' '}
             <LinkInPage
-              href={
-                'https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?usp=sf_link'
-              }
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?usp=sf_link"
+              target="_blank"
               text="hier"
             />{' '}
             möglich. Ein Auszug der bis dato zentralen Erkenntnisse findet sich
@@ -440,18 +445,23 @@ export default function Content() {
         </div>
         <div className="mt-6 prose prose-emerald prose-lg text-gray-500 mx-auto">
           <p>
-            Bis zum 03.01.2022 nahmen 87 Personen an der Umfrage teil. Die
-            Umfrage wurde auf mehreren Kanälen ausgeschrieben. Unter anderem
+            Im Zeitraum vom 24.11.2021 bis zum 03.01.2022 nahmen 87 Personen an
+            der Umfrage teil. Die Umfrage wurde auf verschiedenen Kanälen
+            ausgeschrieben. Unter anderem
           </p>
           <ul role="list">
-            <li>im Mitteilungsblatt Markt Erlbach</li>
-            <li>in Facebook Gruppen</li>
-            <li>durch Weiterleitungen</li>
+            <li>im Mitteilungsblatt der Gemeinde Markt Erlbach</li>
+            <li>
+              in regionalen Facebook Gruppen
+              <br />
+              (Markt Erlbach, Landkreis NEA-BW, Wilhermsdorf, etc.
+            </li>
+            <li>durch Weiterleitungen (E-Mail, Kurznachrichten, etc.)</li>
           </ul>
           <p>
             Die Ergebnisse der Umfrage wurde in mehrere Bereiche aufgeteilt.
-            Zuerst werden die Teilnehmer analysiert und anschließend die
-            Inhalte.
+            Zuerst wurden die Teilnehmer charakterisiert. Anschließend die
+            Inhalte im Bezug auf Coworking.
           </p>
           <h2>Beschreibung der Teilnehmerstichprobe</h2>
           <p>
@@ -459,26 +469,43 @@ export default function Content() {
             hinsichtlich
             <ul role="list">
               <li>
-                <LinkInPage href={'#residence'} text={'Wohnort'} />
+                <a
+                  href="#residence"
+                  className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+                >
+                  Wohnort
+                </a>
               </li>
               <li>
-                <LinkInPage href={'#age'} text={'Alter'} />
+                <a
+                  href="#age"
+                  className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+                >
+                  Alter
+                </a>
               </li>
               <li>
-                <LinkInPage href={'#employment'} text={'Beschäftigung'} />
+                <a
+                  href="#employment"
+                  className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+                >
+                  Beschäftigung
+                </a>
               </li>
             </ul>
           </p>
-          <h3 id="residence">Wohnort</h3>
+          <h3 id="residence" className="pt-12">
+            Wohnort
+          </h3>
           <div className="h-96">
             <GreenPie data={dataResidentPie} />
           </div>
           <p>
             <HighlightText text="90%" /> der Umfrageteilnehmer kommen{' '}
-            <HighlightText text="aus Markt Erlbach" /> oder einer
+            <HighlightText text="aus Markt Erlbach" /> oder einer direkten
             Nachbargemeinde.
           </p>
-          <h3 id="age">Alter</h3>
+          <h3 id="age" className="pt-12">Alter</h3>
           <div className="h-96">
             <GreenBar
               data={dataAgeBar}
@@ -507,7 +534,7 @@ export default function Content() {
             und 40 Jahre alt. Das Durchschnittsalter aller Teilnehmer liegt bei{' '}
             <HighlightText text="34 Jahren" />.
           </p>
-          <h3 id="employment">Beschäftigung</h3>
+          <h3 id="employment" className="pt-12">Beschäftigung</h3>
           <div className="h-96">
             <GreenPie data={dataEmploymentPie} />
           </div>
@@ -515,46 +542,60 @@ export default function Content() {
             <HighlightText text="4 von 5" /> Umfrageteilnehmern befinden sich in
             einem Angestelltenverhältnis.
           </p>
-          <h2>Inhalte der Umfrage</h2>
+          <h2 className="pt-20">Inhalte der Umfrage</h2>
           Im Rahmen unserer Umfrage beantworteten die Teilnehmer Fragen zu
           folgenden Kategorien:
           <ul role="list">
             <li>
-              <LinkInPage
-                href={'#satisfaction'}
-                text={
-                  'Zufriedenheit bzw. Verbesserungspotenzial in der Arbeitsumgebung'
-                }
-              />
+              <a
+                href="#satisfaction"
+                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+              >
+                Zufriedenheit in der aktuellen Arbeitsumgebung
+              </a>
+            </li>
+            <li>
+              <a
+                href="#improvement"
+                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+              >
+                Verbesserungspotential in der aktuellen Arbeitsumgebung
+              </a>
             </li>
             <li>Dauer bzw. Zufriedenheit mit Arbeitsweg</li>
+            <li>Zahlungsbereitschaft bzgl. Coworking-Nutzung</li>
             <li>
-              <LinkInPage
-                href={'#interest-coworking'}
-                text={
-                  'Interesse und Zahlungsbereitschaft bzgl. Coworking-Nutzung'
-                }
-              />
+              <a
+                href="#interest-coworking"
+                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+              >
+                Interesse bzgl. Coworking-Nutzung
+              </a>
             </li>
             <li>
-              <LinkInPage
-                href={'#working-activity'}
-                text={'Klassifikation typischer beruflicher Tätigkeiten'}
-              />
+              <a
+                href="#working-activity"
+                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+              >
+                Tätigkeiten im von Coworking-Interssierten
+              </a>
             </li>
             <li>
-              <LinkInPage
-                href={'#expectations-coworking'}
-                text={'Erwartungen an Coworking'}
-              />
+              <a
+                href="#expectations-coworking"
+                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+              >
+                Erwartungen an Coworking
+              </a>
             </li>
+            <li>Erlaubnis durch Arbeitgeber für mobiles Arbeiten</li>
             <li>
-              <LinkInPage
-                href={'#support-employeer'}
-                text={
-                  'Erlaubnis und Unterstützung durch Arbeitgeber für mobiles Arbeiten'
-                }
-              />
+              <a
+                href="#support-employeer"
+                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
+              >
+                Unterstützung durch Arbeitgeber für mobiles Arbeiten
+              </a>
             </li>
           </ul>
           <p>
@@ -563,8 +604,8 @@ export default function Content() {
             beziehen sich deshalb auf die Anzahl der Teilnehmer, welche die
             betreffende Frage beantwortet haben.
           </p>
-          <h3 id="satisfaction">
-            Zufriedenheit bzw. Verbesserungspotenziale in der Arbeitsumgebung
+          <h3 id="satisfaction" className="pt-12">
+            Zufriedenheit in der aktuellen Arbeitsumgebung
           </h3>
           <div className="h-[34rem]">
             <GreenBar
@@ -590,9 +631,11 @@ export default function Content() {
           <p>
             <HighlightText text="40%" /> stören sich an der technischen
             Ausstattung, <HighlightText text="16%" /> an der fehlenden Trennung
-            zwischen Arbeit und Privatem. <HighlightText text="19%" /> sind mit
-            ihrer derzeitigen Arbeitsumgebung zufrieden.
+            zwischen Arbeit und Privatem.
           </p>
+          <h3 id="improvement" className="pt-12">
+            Verbesserungspotenziale in der aktuellen Arbeitsumgebung
+          </h3>
           <div className="h-[34rem]">
             <GreenBar
               data={dataSatisfactionBar2}
@@ -624,19 +667,20 @@ export default function Content() {
             <HighlightText text="Location (Architektur, Lage)" /> eine hohe
             Relevanz hat.
           </p>
-          <h3 id="interest-coworking">Interesse bzgl. Coworking-Nutzung</h3>
+          <h3 id="interest-coworking" className="pt-12">Interesse bzgl. Coworking-Nutzung</h3>
           <div className="h-96">
             <GreenPie
               data={dataCoworkingPie}
               colors={[nivoGreensReversed[0], nivoGreensReversed[4]]}
+              hideLegend={true}
             />
           </div>
           <p>
             Fast <HighlightText text="zwei Drittel" /> der Teilnehmer können
             sich vorstellen, einen Coworking-Space für ihre Arbeit zu nutzen.
           </p>
-          <h3 id="working-activity">
-            Klassifikation typischer beruflicher Tätigkeiten
+          <h3 id="working-activity" className="pt-12">
+            Tätigkeiten von Coworking-Interessierten
           </h3>
           <div className="h-96">
             <GreenPie
@@ -654,18 +698,21 @@ export default function Content() {
             <HighlightText text="Online-Meetings" />.
           </p>
           <h3 id="expectations-coworking">Erwartungen an Coworking</h3>
-          <div className="h-96">
-            <GreenPie data={dataExpectationsCoworkingPie} />
+          <div className="h-96" className="pt-12">
+            <GreenPie
+              data={dataExpectationsCoworkingPie}
+              legendPosition="bottom-left"
+            />
           </div>
           <p>
-            Die Mehrheit der Coworking-Interessierten erhofft sich ein
+            Die Mehrheit der Coworking-Interessierten erhofft sich ein{' '}
             <HighlightText text="vielfältiges soziales Umfeld" />. Weiterhin ist
             ein <HighlightText text="kurzer Arbeitsweg" /> und eine{' '}
             <HighlightText text="ansprechende Location (Architektur, Lage)" />{' '}
             relevant.
           </p>
-          <h3 id="support-employeer">
-            Erlaubnis und Unterstützung durch Arbeitgeber für mobiles Arbeiten
+          <h3 id="support-employeer" className="pt-12">
+            Unterstützung durch Arbeitgeber für mobiles Arbeiten
           </h3>
           <div className="h-96">
             <GreenPie
@@ -675,6 +722,7 @@ export default function Content() {
                 nivoGreensReversed[2],
                 nivoGreensReversed[5],
               ]}
+              hideLegend={true}
             />
           </div>
           <p>
@@ -685,7 +733,7 @@ export default function Content() {
             Unterstützung durch den Arbeitgeber{' '}
             <HighlightText text="nicht informiert" />.
           </p>
-          <h2>Fazit</h2>
+          <h2 className="pt-20">Fazit</h2>
           <p>
             Die Umfrageergebnisse zeigen{' '}
             <HighlightText text="enormes Potenzial" /> für Coworking im Rangau.
@@ -699,7 +747,7 @@ export default function Content() {
             Umfrageergebnisse.
             <br />
             <HighlightText text="Kontaktieren Sie uns" />{' '}
-            <LinkInPage href="" text="hier" /> gerne persönlich!
+            <Link href="/#team-section">hier</Link> gerne persönlich!
           </p>
         </div>
       </div>

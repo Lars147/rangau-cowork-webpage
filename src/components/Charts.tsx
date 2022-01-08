@@ -14,17 +14,32 @@ export const nivoGreens = [
 
 export const nivoGreensReversed = nivoGreens.reverse();
 
+declare type CustomLegendAnchor =
+  | 'top'
+  | 'top-right'
+  | 'right'
+  | 'bottom-right'
+  | 'bottom'
+  | 'bottom-left'
+  | 'left'
+  | 'top-left'
+  | 'center';
+
 export function GreenPie({
   data,
   colors = { scheme: 'greens' },
+  legendPosition = 'top-left',
+  hideLegend = false,
 }: {
   data: any;
   colors?: any;
+  legendPosition?: CustomLegendAnchor;
+  hideLegend?: boolean;
 }) {
   return (
     <ResponsivePie
       data={data}
-      margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+      margin={{ top: 40, right: 80, bottom: 40, left: 80 }}
       innerRadius={0.5}
       padAngle={0.7}
       cornerRadius={3}
@@ -41,31 +56,35 @@ export function GreenPie({
       theme={{
         fontSize: 14,
       }}
-      legends={[
-        {
-          anchor: 'left',
-          direction: 'column',
-          justify: false,
-          translateX: -70,
-          translateY: -50,
-          itemsSpacing: 5,
-          itemWidth: 100,
-          itemHeight: 18,
-          itemTextColor: '#999',
-          itemDirection: 'left-to-right',
-          itemOpacity: 1,
-          symbolSize: 18,
-          symbolShape: 'circle',
-          effects: [
-            {
-              on: 'hover',
-              style: {
-                itemTextColor: '#000',
+      legends={
+        hideLegend
+          ? []
+          : [
+              {
+                anchor: legendPosition,
+                direction: 'column',
+                justify: false,
+                translateX: -70,
+                translateY: -10,
+                itemsSpacing: 5,
+                itemWidth: 100,
+                itemHeight: 18,
+                itemTextColor: '#999',
+                itemDirection: 'left-to-right',
+                itemOpacity: 1,
+                symbolSize: 18,
+                symbolShape: 'circle',
+                effects: [
+                  {
+                    on: 'hover',
+                    style: {
+                      itemTextColor: '#000',
+                    },
+                  },
+                ],
               },
-            },
-          ],
-        },
-      ]}
+            ]
+      }
     />
   );
 }
