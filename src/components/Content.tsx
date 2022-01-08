@@ -127,12 +127,12 @@ const dataSatisfactionBar1 = [
     frequencyColor: 'hsl(158, 64%, 52%)',
   },
   {
-    ageRange: 'Lautstärke',
+    ageRange: 'Lärmbelästigung',
     frequency: 18,
     frequencyColor: 'hsl(158, 64%, 52%)',
   },
   {
-    ageRange: 'Technische Ausstattung',
+    ageRange: 'unzureichende technische Ausstattung',
     frequency: 40,
     frequencyColor: 'hsl(158, 64%, 52%)',
   },
@@ -440,7 +440,7 @@ export default function Content() {
               text="hier"
             />{' '}
             möglich. Ein Auszug der bis dato zentralen Erkenntnisse findet sich
-            hier.
+            im Folgenden.
           </p>
         </div>
         <div className="mt-6 prose prose-emerald prose-lg text-gray-500 mx-auto">
@@ -458,148 +458,134 @@ export default function Content() {
             </li>
             <li>durch Weiterleitungen (E-Mail, Kurznachrichten, etc.)</li>
           </ul>
-          <p>
-            Die Ergebnisse der Umfrage wurde in mehrere Bereiche aufgeteilt.
-            Zuerst wurden die Teilnehmer charakterisiert. Anschließend die
-            Inhalte im Bezug auf Coworking.
-          </p>
           <h2>Beschreibung der Teilnehmerstichprobe</h2>
           <p>
             Dieser Abschnitt charakterisiert die Teilnehmer der Umfrage
             hinsichtlich
             <ul role="list">
               <li>
-                <a
-                  href="#residence"
-                  className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-                >
-                  Wohnort
-                </a>
+                <Link href="/auswertung/#residence">
+                  <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                    Wohnort
+                  </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#age"
-                  className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-                >
-                  Alter
-                </a>
+                <Link href="/auswertung/#age">
+                  <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                    Alter
+                  </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#employment"
-                  className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-                >
-                  Beschäftigung
-                </a>
+                <Link href="/auswertung/#employment">
+                  <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                    Beschäftigung
+                  </a>
+                </Link>
               </li>
             </ul>
           </p>
-          <h3 id="residence" className="pt-12">
-            Wohnort
-          </h3>
-          <div className="h-96">
-            <GreenPie data={dataResidentPie} />
+          <div id="residence" className="pt-12">
+            <h3>Wohnort</h3>
+            <div className="h-96">
+              <GreenPie data={dataResidentPie} hideLegend={true} />
+            </div>
+            <p>
+              <HighlightText text="90%" /> der Umfrageteilnehmer kommen{' '}
+              <HighlightText text="aus Markt Erlbach" /> oder einer direkten
+              Nachbargemeinde.
+            </p>
           </div>
-          <p>
-            <HighlightText text="90%" /> der Umfrageteilnehmer kommen{' '}
-            <HighlightText text="aus Markt Erlbach" /> oder einer direkten
-            Nachbargemeinde.
-          </p>
-          <h3 id="age" className="pt-12">
-            Alter
-          </h3>
-          <div className="h-96">
-            <GreenBar
-              data={dataAgeBar}
-              keys={['Anzahl']}
-              indexBy={'ageRange'}
-              axisBottom={{
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 0,
-                legend: 'Alter',
-                legendPosition: 'middle',
-                legendOffset: 32,
-              }}
-              axisLeft={{
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 0,
-                legend: 'Anzahl',
-                legendPosition: 'middle',
-                legendOffset: -40,
-              }}
-            />
+          <div id="age" className="pt-12">
+            <h3>Alter</h3>
+            <div className="h-96">
+              <GreenBar
+                data={dataAgeBar}
+                keys={['Anzahl']}
+                indexBy={'ageRange'}
+                axisBottom={{
+                  tickSize: 5,
+                  tickPadding: 5,
+                  tickRotation: 0,
+                  legend: 'Alter',
+                  legendPosition: 'middle',
+                  legendOffset: 32,
+                }}
+                axisLeft={{
+                  tickSize: 5,
+                  tickPadding: 5,
+                  tickRotation: 0,
+                  legend: 'Anzahl',
+                  legendPosition: 'middle',
+                  legendOffset: -40,
+                }}
+              />
+            </div>
+            <p>
+              <HighlightText text="74%" /> der Umfrageteilnehmer sind zwischen
+              21 und 40 Jahre alt. Das Durchschnittsalter aller Teilnehmer liegt
+              bei <HighlightText text="34 Jahren" />.
+            </p>
           </div>
-          <p>
-            <HighlightText text="74%" /> der Umfrageteilnehmer sind zwischen 21
-            und 40 Jahre alt. Das Durchschnittsalter aller Teilnehmer liegt bei{' '}
-            <HighlightText text="34 Jahren" />.
-          </p>
-          <h3 id="employment" className="pt-12">
-            Beschäftigung
-          </h3>
-          <div className="h-96">
-            <GreenPie data={dataEmploymentPie} />
+          <div id="employment" className="pt-12">
+            <h3>Beschäftigung</h3>
+            <div className="h-96">
+              <GreenPie data={dataEmploymentPie} hideLegend={true} />
+            </div>
+            <p>
+              <HighlightText text="4 von 5" /> Umfrageteilnehmern befinden sich
+              in einem Angestelltenverhältnis.
+            </p>
           </div>
-          <p>
-            <HighlightText text="4 von 5" /> Umfrageteilnehmern befinden sich in
-            einem Angestelltenverhältnis.
-          </p>
           <h2 className="pt-20">Inhalte der Umfrage</h2>
           Im Rahmen unserer Umfrage beantworteten die Teilnehmer Fragen zu
           folgenden Kategorien:
           <ul role="list">
             <li>
-              <a
-                href="#satisfaction"
-                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-              >
-                Zufriedenheit in der aktuellen Arbeitsumgebung
-              </a>
+              <Link href="/auswertung/#satisfaction">
+                <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                  Unzufriedenheit in der aktuellen Arbeitsumgebung
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#improvement"
-                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-              >
-                Verbesserungspotential in der aktuellen Arbeitsumgebung
-              </a>
+              <Link href="/auswertung/#improvement">
+                <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                  Zufriedenheit in der aktuellen Arbeitsumgebung
+                </a>
+              </Link>
             </li>
             <li>Dauer bzw. Zufriedenheit mit Arbeitsweg</li>
             <li>Zahlungsbereitschaft bzgl. Coworking-Nutzung</li>
             <li>
-              <a
-                href="#interest-coworking"
-                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-              >
-                Interesse bzgl. Coworking-Nutzung
-              </a>
+              <Link href="/auswertung/#interest-coworking">
+                <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                  Interesse bzgl. Coworking-Nutzung
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#working-activity"
-                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-              >
-                Tätigkeiten im von Coworking-Interssierten
-              </a>
+              <Link href="/auswertung/#working-activity">
+                <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                  Tätigkeiten von Coworking-Interssierten
+                </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#expectations-coworking"
-                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-              >
-                Erwartungen an Coworking
-              </a>
+              <Link href="/auswertung/#expectations-coworking">
+                <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                  Erwartungen an Coworking
+                </a>
+              </Link>
             </li>
             <li>Erlaubnis durch Arbeitgeber für mobiles Arbeiten</li>
             <li>
-              <a
-                href="#support-employeer"
-                className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800"
-              >
-                Unterstützung durch Arbeitgeber für mobiles Arbeiten
-              </a>
+              <Link href="/auswertung/#support-employeer">
+                <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
+                  Unterstützung durch Arbeitgeber für mobiles Arbeiten
+                </a>
+              </Link>
             </li>
           </ul>
           <p>
@@ -608,139 +594,141 @@ export default function Content() {
             beziehen sich deshalb auf die Anzahl der Teilnehmer, welche die
             betreffende Frage beantwortet haben.
           </p>
-          <h3 id="satisfaction" className="pt-12">
-            Zufriedenheit in der aktuellen Arbeitsumgebung
-          </h3>
-          <div className="h-[34rem]">
-            <GreenBar
-              data={dataSatisfactionBar1}
-              keys={['frequency']}
-              indexBy={'ageRange'}
-              axisBottom={{
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 45,
-              }}
-              axisLeft={{
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 0,
-                legend: 'Anteil abgegebener Stimmen [%]',
-                legendPosition: 'middle',
-                legendOffset: -40,
-              }}
-              margin={{ top: 40, right: 80, bottom: 220, left: 80 }}
-            />
+          <div id="satisfaction" className="pt-12">
+            <h3>Unzufriedenheit in der aktuellen Arbeitsumgebung</h3>
+            <div className="h-[34rem]">
+              <GreenBar
+                data={dataSatisfactionBar1}
+                keys={['frequency']}
+                indexBy={'ageRange'}
+                axisBottom={{
+                  tickSize: 5,
+                  tickPadding: 5,
+                  tickRotation: 45,
+                }}
+                axisLeft={{
+                  tickSize: 5,
+                  tickPadding: 5,
+                  tickRotation: 0,
+                  legend: 'Anteil abgegebener Stimmen [%]',
+                  legendPosition: 'middle',
+                  legendOffset: -40,
+                }}
+                margin={{ top: 40, right: 120, bottom: 220, left: 80 }}
+              />
+            </div>
+            <p>
+              <HighlightText text="40%" /> stören sich an der technischen
+              Ausstattung, <HighlightText text="16%" /> an der fehlenden
+              Trennung zwischen Arbeit und Privatem.
+            </p>
           </div>
-          <p>
-            <HighlightText text="40%" /> stören sich an der technischen
-            Ausstattung, <HighlightText text="16%" /> an der fehlenden Trennung
-            zwischen Arbeit und Privatem.
-          </p>
-          <h3 id="improvement" className="pt-12">
-            Verbesserungspotenziale in der aktuellen Arbeitsumgebung
-          </h3>
-          <div className="h-[34rem]">
-            <GreenBar
-              data={dataSatisfactionBar2}
-              keys={['frequency']}
-              indexBy={'ageRange'}
-              axisBottom={{
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 45,
-              }}
-              axisLeft={{
-                tickSize: 5,
-                tickPadding: 5,
-                tickRotation: 0,
-                legend: 'Anteil abgegebener Stimmen [%]',
-                legendPosition: 'middle',
-                legendOffset: -40,
-              }}
-              margin={{ top: 40, right: 80, bottom: 200, left: 80 }}
-            />
+          <div id="improvement" className="pt-12">
+            <h3>Zufriedenheit in der aktuellen Arbeitsumgebung</h3>
+            <div className="h-[34rem]">
+              <GreenBar
+                data={dataSatisfactionBar2}
+                keys={['frequency']}
+                indexBy={'ageRange'}
+                axisBottom={{
+                  tickSize: 5,
+                  tickPadding: 5,
+                  tickRotation: 45,
+                }}
+                axisLeft={{
+                  tickSize: 5,
+                  tickPadding: 5,
+                  tickRotation: 0,
+                  legend: 'Anteil abgegebener Stimmen [%]',
+                  legendPosition: 'middle',
+                  legendOffset: -40,
+                }}
+                margin={{ top: 40, right: 80, bottom: 200, left: 80 }}
+              />
+            </div>
+            <p>
+              Das <HighlightText text="soziale Umfeld" /> und die{' '}
+              <HighlightText text="technische Ausstattung" /> sind, unabhängig
+              vom Arbeitsort, zwei wichtige Zufriedenheitsfaktoren. Am Home
+              Office schätzen viele die{' '}
+              <HighlightText text="Verknüpfung von Arbeit und Privatem" />,
+              wohingegen im Firmenbüro die{' '}
+              <HighlightText text="Location (Architektur, Lage)" /> eine hohe
+              Relevanz hat.
+            </p>
           </div>
-          <p>
-            Das <HighlightText text="soziale Umfeld" /> und die{' '}
-            <HighlightText text="technische Ausstattung" /> sind, unabhängig vom
-            Arbeitsort, zwei wichtige Zufriedenheitsfaktoren. Am Home Office
-            schätzen viele die{' '}
-            <HighlightText text="Verknüpfung von Arbeit und Privatem" />,
-            wohingegen im Firmenbüro die{' '}
-            <HighlightText text="Location (Architektur, Lage)" /> eine hohe
-            Relevanz hat.
-          </p>
-          <h3 id="interest-coworking" className="pt-12">
-            Interesse bzgl. Coworking-Nutzung
-          </h3>
-          <div className="h-96">
-            <GreenPie
-              data={dataCoworkingPie}
-              colors={[nivoGreensReversed[0], nivoGreensReversed[4]]}
-              hideLegend={true}
-            />
+          <div id="interest-coworking" className="pt-12">
+            <h3>Interesse bzgl. Coworking-Nutzung</h3>
+            <div className="h-96">
+              <GreenPie
+                data={dataCoworkingPie}
+                colors={[nivoGreensReversed[0], nivoGreensReversed[4]]}
+                hideLegend={true}
+              />
+            </div>
+            <p>
+              Fast <HighlightText text="zwei Drittel" /> der Teilnehmer können
+              sich vorstellen, einen Coworking-Space für ihre Arbeit zu nutzen.
+            </p>
           </div>
-          <p>
-            Fast <HighlightText text="zwei Drittel" /> der Teilnehmer können
-            sich vorstellen, einen Coworking-Space für ihre Arbeit zu nutzen.
-          </p>
-          <h3 id="working-activity" className="pt-12">
-            Tätigkeiten von Coworking-Interessierten
-          </h3>
-          <div className="h-96">
-            <GreenPie
-              data={dataWorkingActivityPie}
-              colors={nivoGreensReversed}
-            />
-          </div>
-          <p>
-            Diese Coworking-Interessierten verbringen den{' '}
-            <HighlightText
-              text="größten Teil ihrer
+          <div id="working-activity" className="pt-12">
+            <h3>Tätigkeiten von Coworking-Interessierten</h3>
+            <div className="h-96">
+              <GreenPie
+                data={dataWorkingActivityPie}
+                colors={nivoGreensReversed}
+                hideLegend={true}
+              />
+            </div>
+            <p>
+              Diese Coworking-Interessierten verbringen den{' '}
+              <HighlightText
+                text="größten Teil ihrer
             Arbeitszeit mit individueller Schreibtischarbeit"
-            />
-            . Zusätzlich entfallen <HighlightText text="18%" /> auf{' '}
-            <HighlightText text="Online-Meetings" />.
-          </p>
-          <h3 id="expectations-coworking" className="pt-12">
-            Erwartungen an Coworking
-          </h3>
-          <div className="h-96">
-            <GreenPie
-              data={dataExpectationsCoworkingPie}
-              legendPosition="bottom-left"
-            />
+              />
+              . Zusätzlich entfallen <HighlightText text="18%" /> auf{' '}
+              <HighlightText text="Online-Meetings" />.
+            </p>
           </div>
-          <p>
-            Die Mehrheit der Coworking-Interessierten erhofft sich ein{' '}
-            <HighlightText text="vielfältiges soziales Umfeld" />. Weiterhin ist
-            ein <HighlightText text="kurzer Arbeitsweg" /> und eine{' '}
-            <HighlightText text="ansprechende Location (Architektur, Lage)" />{' '}
-            relevant.
-          </p>
-          <h3 id="support-employeer" className="pt-12">
-            Unterstützung durch Arbeitgeber für mobiles Arbeiten
-          </h3>
-          <div className="h-96">
-            <GreenPie
-              data={dataSupportEmployeerPie}
-              colors={[
-                nivoGreensReversed[0],
-                nivoGreensReversed[2],
-                nivoGreensReversed[5],
-              ]}
-              hideLegend={true}
-            />
+          <div id="expectations-coworking" className="pt-12">
+            <h3>Erwartungen an Coworking</h3>
+            <div className="h-96">
+              <GreenPie
+                data={dataExpectationsCoworkingPie}
+                legendPosition="bottom-left"
+                hideLegend={true}
+              />
+            </div>
+            <p>
+              Die Mehrheit der Coworking-Interessierten erhofft sich ein{' '}
+              <HighlightText text="vielfältiges soziales Umfeld" />. Weiterhin
+              ist ein <HighlightText text="kurzer Arbeitsweg" /> und eine{' '}
+              <HighlightText text="ansprechende Location (Architektur, Lage)" />{' '}
+              relevant.
+            </p>
           </div>
-          <p>
-            <HighlightText text="25%" /> der coworking-interessierten
-            Arbeitnehmer wissen, dass sie von ihrem Arbeitgeber bei mobilem
-            Arbeiten finanziell unterstützt werden können.{' '}
-            <HighlightText text="Über ein Drittel" /> ist über eine mögliche
-            Unterstützung durch den Arbeitgeber{' '}
-            <HighlightText text="nicht informiert" />.
-          </p>
+          <div id="support-employeer" className="pt-12">
+            <h3>Unterstützung durch Arbeitgeber für mobiles Arbeiten</h3>
+            <div className="h-96">
+              <GreenPie
+                data={dataSupportEmployeerPie}
+                colors={[
+                  nivoGreensReversed[0],
+                  nivoGreensReversed[2],
+                  nivoGreensReversed[5],
+                ]}
+                hideLegend={true}
+              />
+            </div>
+            <p>
+              <HighlightText text="25%" /> der coworking-interessierten
+              Arbeitnehmer wissen, dass sie von ihrem Arbeitgeber bei mobilem
+              Arbeiten finanziell unterstützt werden können.{' '}
+              <HighlightText text="Über ein Drittel" /> ist über eine mögliche
+              Unterstützung durch den Arbeitgeber{' '}
+              <HighlightText text="nicht informiert" />.
+            </p>
+          </div>
           <h2 className="pt-20">Fazit</h2>
           <p>
             Die Umfrageergebnisse zeigen{' '}
@@ -753,6 +741,7 @@ export default function Content() {
             <HighlightText text="Diskussion" /> und Anfragen zur{' '}
             <HighlightText text="Detailauswertung" /> der vielversprechenden
             Umfrageergebnisse.
+            <br />
             <br />
             <HighlightText text="Kontaktieren Sie uns" />{' '}
             <Link href="/#team-section">hier</Link> gerne persönlich!
