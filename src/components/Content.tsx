@@ -464,21 +464,21 @@ export default function Content() {
             hinsichtlich
             <ul role="list">
               <li>
-                <Link href="/auswertung/#residence">
+                <Link href="/auswertung/#residence" passHref>
                   <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                     Wohnort
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/auswertung/#age">
+                <Link href="/auswertung/#age" passHref>
                   <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                     Alter
                   </a>
                 </Link>
               </li>
               <li>
-                <Link href="/auswertung/#employment">
+                <Link href="/auswertung/#employment" passHref>
                   <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                     Beschäftigung
                   </a>
@@ -543,14 +543,14 @@ export default function Content() {
           folgenden Kategorien:
           <ul role="list">
             <li>
-              <Link href="/auswertung/#satisfaction">
+              <Link href="/auswertung/#satisfaction" passHref>
                 <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                   Unzufriedenheit in der aktuellen Arbeitsumgebung
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/auswertung/#improvement">
+              <Link href="/auswertung/#improvement" passHref>
                 <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                   Zufriedenheit in der aktuellen Arbeitsumgebung
                 </a>
@@ -559,21 +559,21 @@ export default function Content() {
             <li>Dauer bzw. Zufriedenheit mit Arbeitsweg</li>
             <li>Zahlungsbereitschaft bzgl. Coworking-Nutzung</li>
             <li>
-              <Link href="/auswertung/#interest-coworking">
+              <Link href="/auswertung/#interest-coworking" passHref>
                 <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                   Interesse bzgl. Coworking-Nutzung
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/auswertung/#working-activity">
+              <Link href="/auswertung/#working-activity" passHref>
                 <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                   Tätigkeiten von Coworking-Interssierten
                 </a>
               </Link>
             </li>
             <li>
-              <Link href="/auswertung/#expectations-coworking">
+              <Link href="/auswertung/#expectations-coworking" passHref>
                 <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                   Erwartungen an Coworking
                 </a>
@@ -581,7 +581,7 @@ export default function Content() {
             </li>
             <li>Erlaubnis durch Arbeitgeber für mobiles Arbeiten</li>
             <li>
-              <Link href="/auswertung/#support-employeer">
+              <Link href="/auswertung/#support-employeer" passHref>
                 <a className="text-gray-500 font-bold underline decoration-emerald-400 hover:text-emerald-800">
                   Unterstützung durch Arbeitgeber für mobiles Arbeiten
                 </a>
