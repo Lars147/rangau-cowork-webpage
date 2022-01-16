@@ -12,7 +12,7 @@ const SimpleBanner = () => {
         <Link href={banner.href} passHref>
           <a
             className="after:absolute after:inset-0 flex justify-center"
-            target="_blank"
+            target={banner.target}
           >
             <SpeakerphoneIcon
               className="h-6 w-6 text-white"
