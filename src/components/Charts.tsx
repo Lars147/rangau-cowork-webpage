@@ -28,18 +28,20 @@ declare type CustomLegendAnchor =
 export function GreenPie({
   data,
   colors = { scheme: 'greens' },
+  margin = { top: 40, right: 80, bottom: 40, left: 80 },
   legendPosition = 'top-left',
   hideLegend = false,
 }: {
   data: any;
   colors?: any;
+  margin?: any;
   legendPosition?: CustomLegendAnchor;
   hideLegend?: boolean;
 }) {
   return (
     <ResponsivePie
       data={data}
-      margin={{ top: 40, right: 80, bottom: 40, left: 80 }}
+      margin={margin}
       innerRadius={0.5}
       padAngle={0.7}
       cornerRadius={3}

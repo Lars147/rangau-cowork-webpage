@@ -6,7 +6,8 @@
   "banner": {
     "enabled": true,
     "closable": true,
-    "text": "Zur Coworking Umfrage"
+    "text": "Zu den Ergebnissen der Umfrage",
+    "href": "/auswertung/"
   },
   "navigation": [
     {
@@ -23,7 +24,7 @@
     }
   ],
   "callToAction": {
-    "text": "Unser Team",
+    "text": "Ergebnisse",
     "href": "teamsection"
   },
   "mainHero": {
@@ -146,7 +147,7 @@
       },
       {
         "name": "Impressum",
-        "href": "impressum/"
+        "href": "/impressum/"
       }
     ],
     "socialMedia": {
