@@ -30,9 +30,11 @@ export function GreenPie({
   colors = { scheme: 'greens' },
   margin = { top: 40, right: 80, bottom: 40, left: 80 },
   legendPosition = 'top-left',
+  customValueFormat = '',
   hideLegend = false,
 }: {
   data: any;
+  customValueFormat?: string;
   colors?: any;
   margin?: any;
   legendPosition?: CustomLegendAnchor;
@@ -47,6 +49,7 @@ export function GreenPie({
       cornerRadius={3}
       activeOuterRadiusOffset={8}
       colors={colors}
+      valueFormat={(d) => `${d}${customValueFormat}`}
       borderWidth={1}
       borderColor={{ from: 'color', modifiers: [['darker', 0.2]] }}
       arcLinkLabelsSkipAngle={10}
@@ -97,6 +100,8 @@ export function GreenBar({
   indexBy,
   axisBottom,
   axisLeft,
+  customValueFormat = '',
+  label = 'formattedValue',
   colors = { scheme: 'greens' },
   margin = { top: 40, right: 80, bottom: 80, left: 80 },
 }: {
@@ -105,6 +110,8 @@ export function GreenBar({
   indexBy: any;
   axisBottom: any;
   axisLeft: any;
+  customValueFormat?: string;
+  label?: any;
   colors?: any;
   margin?: any;
 }) {
@@ -116,12 +123,14 @@ export function GreenBar({
       theme={{
         fontSize: 14,
       }}
+      valueFormat={(d) => `${d}${customValueFormat}`}
       colors={colors}
       colorBy="indexValue"
       borderRadius={1}
       borderWidth={1}
       borderColor={{ from: 'color', modifiers: [['darker', 1.6]] }}
       margin={margin}
+      label={label}
       axisBottom={axisBottom}
       axisLeft={axisLeft}
     />
