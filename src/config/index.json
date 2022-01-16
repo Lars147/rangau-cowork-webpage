@@ -7,7 +7,7 @@
     "enabled": true,
     "target": "_self",
     "closable": true,
-    "text": "Zu den Ergebnissen der Umfrage",
+    "text": "Zu den Umfrageergebnissen",
     "href": "/auswertung/"
   },
   "navigation": [
@@ -34,9 +34,9 @@
     "description": "Wir sind eine Initiative, die sich für Coworking im Rangau stark macht. Dabei verstehen wir uns als zentraler Ansprechpartner für alle Coworking-Begeisterten der Region. Durch Analysen, Gespräche und Veranstaltungen evaluieren wir vorhandene Potenziale und unterstützen aufkeimende Initiativen.",
     "img": "/assets/images/coworking-1-medium.jpg",
     "primaryAction": {
-      "text": "Zur Coworking Umfrage",
-      "target": "_blank",
-      "href": "https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?usp=sf_link"
+      "text": "Zu den Umfrageergebnissen",
+      "target": "_self",
+      "href": "/auswertung/"
     },
     "secondaryAction": {
       "text": "Kontakt",
@@ -143,8 +143,8 @@
   "about": {
     "sections": [
       {
-        "name": "Zur Coworking Umfrage",
-        "href": "https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?usp=sf_link"
+        "name": "Zu den Umfrageergebnissen",
+        "href": "/auswertung/"
       },
       {
         "name": "Impressum",
