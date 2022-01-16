@@ -539,7 +539,7 @@ const Evaluation = () => {
                     tickSize: 5,
                     tickPadding: 5,
                     tickRotation: 0,
-                    legend: 'Anzahl',
+                    legend: 'Anzahl der Teilnehmer',
                     legendPosition: 'middle',
                     legendOffset: -40,
                   }}
@@ -634,7 +634,7 @@ const Evaluation = () => {
                     tickSize: 5,
                     tickPadding: 5,
                     tickRotation: 0,
-                    legend: 'Anteil abgegebener Stimmen [%]',
+                    legend: 'Anteil der Teilnehmer [%]',
                     legendPosition: 'middle',
                     legendOffset: -40,
                   }}
@@ -664,7 +664,7 @@ const Evaluation = () => {
                     tickSize: 5,
                     tickPadding: 5,
                     tickRotation: 0,
-                    legend: 'Anteil abgegebener Stimmen [%]',
+                    legend: 'Anteil der Teilnehmer [%]',
                     legendPosition: 'middle',
                     legendOffset: -40,
                   }}
