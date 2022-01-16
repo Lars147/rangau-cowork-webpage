@@ -631,7 +631,6 @@ const Evaluation = () => {
                   keys={['Anteil']}
                   indexBy={'SatisfactionCategory'}
                   customValueFormat="%"
-                  label={(d) => `${d.value}%`}
                   axisBottom={{
                     tickSize: 5,
                     tickPadding: 5,
@@ -662,7 +661,6 @@ const Evaluation = () => {
                   keys={['Anteil']}
                   indexBy={'label'}
                   customValueFormat="%"
-                  label={(d) => `${d.value}%`}
                   axisBottom={{
                     tickSize: 5,
                     tickPadding: 5,
