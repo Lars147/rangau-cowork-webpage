@@ -4,6 +4,7 @@ import { ExclamationIcon } from '@heroicons/react/outline';
 import Head from 'next/head';
 import Link from 'next/link';
 
+import About from '../components/About';
 import { GreenPie, GreenBar, nivoGreensReversed } from '../components/Charts';
 import Navbar from '../components/Navbar';
 
@@ -784,6 +785,8 @@ const Evaluation = () => {
           </div>
         </div>
       </div>
+      <hr />
+      <About />
     </>
   );
 };
