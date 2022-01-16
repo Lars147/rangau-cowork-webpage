@@ -124,6 +124,7 @@ export function GreenBar({
         fontSize: 14,
       }}
       valueFormat={(d) => `${d}${customValueFormat}`}
+      tooltipLabel={(d) => String(d.indexValue)}
       colors={colors}
       colorBy="indexValue"
       borderRadius={1}
