@@ -5,6 +5,7 @@
   },
   "banner": {
     "enabled": true,
+    "target": "_self",
     "closable": true,
     "text": "Zu den Ergebnissen der Umfrage",
     "href": "/auswertung/"
