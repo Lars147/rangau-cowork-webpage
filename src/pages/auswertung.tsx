@@ -193,7 +193,7 @@ const dataWorkingActivityPie = [
   {
     id: 'Außendienst',
     label: 'Außendienst',
-    value: 4,
+    value: 3,
     color: 'hsl(296, 70%, 50%)',
   },
   {
