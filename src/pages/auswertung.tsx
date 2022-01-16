@@ -719,11 +719,26 @@ const Evaluation = () => {
             </div>
             <div id="expectations-coworking" className="pt-12">
               <h3>Erwartungen an Coworking</h3>
-              <div className="h-72 xl:h-96">
-                <GreenPie
+              <div className="h-[40rem]">
+                <GreenBar
                   data={dataExpectationsCoworkingPie}
-                  legendPosition="bottom-left"
-                  hideLegend={true}
+                  keys={['value']}
+                  indexBy={'label'}
+                  customValueFormat="%"
+                  axisBottom={{
+                    tickSize: 5,
+                    tickPadding: 5,
+                    tickRotation: 45,
+                  }}
+                  axisLeft={{
+                    tickSize: 5,
+                    tickPadding: 5,
+                    tickRotation: 0,
+                    legend: 'Anteil der Teilnehmer [%]',
+                    legendPosition: 'middle',
+                    legendOffset: -40,
+                  }}
+                  margin={{ top: 40, right: 80, bottom: 160, left: 80 }}
                 />
               </div>
               <p>
