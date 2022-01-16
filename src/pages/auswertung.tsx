@@ -734,7 +734,7 @@ const Evaluation = () => {
                     tickSize: 5,
                     tickPadding: 5,
                     tickRotation: 0,
-                    legend: 'Anteil der Teilnehmer [%]',
+                    legend: 'Anteil der Coworking-Interessierten [%]',
                     legendPosition: 'middle',
                     legendOffset: -40,
                   }}
