@@ -19,7 +19,7 @@ const Features = () => {
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             {subtitle}
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          <div className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             In Städten ist Coworking längst etabliert. Coworking auf dem Land
             bietet viel unerschöpftes Potential. Gerade im{' '}
             <span className="font-bold underline decoration-2 decoration-emerald-400">
@@ -79,7 +79,7 @@ const Features = () => {
             >
               Weniger...
             </div>
-          </p>
+          </div>
         </div>
 
         <div className="mt-10">
