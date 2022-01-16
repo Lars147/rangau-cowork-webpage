@@ -222,43 +222,36 @@ const dataExpectationsCoworkingPie = [
     id: 'Privatsphäre',
     label: 'Privatsphäre',
     value: 3,
-    color: 'hsl(39, 70%, 50%)',
   },
   {
     id: 'Flexibilität',
     label: 'Flexibilität',
     value: 5,
-    color: 'hsl(296, 70%, 50%)',
   },
   {
     id: 'Ruhe',
     label: 'Ruhe',
     value: 10,
-    color: 'hsl(296, 70%, 50%)',
   },
   {
     id: 'Technische Ausstattung',
     label: 'Technische Ausstattung',
     value: 13,
-    color: 'hsl(296, 70%, 50%)',
   },
   {
     id: 'Location (Architektur, Lage)',
     label: 'Location (Architektur, Lage)',
     value: 28,
-    color: 'hsl(296, 70%, 50%)',
   },
   {
     id: 'Kurzer Arbeitsweg',
     label: 'Kurzer Arbeitsweg',
     value: 44,
-    color: 'hsl(296, 70%, 50%)',
   },
   {
     id: 'Soziales Umfeld',
     label: 'Soziales Umfeld',
     value: 59,
-    color: 'hsl(296, 70%, 50%)',
   },
 ];
 
