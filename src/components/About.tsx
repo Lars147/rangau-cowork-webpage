@@ -16,9 +16,11 @@ const About = () => {
     >
       <div className="flex flex-col items-center justify-center">
         <div>
-          <a href="#">
-            <img src={logo} alt={companyName} className="w-16 h-16" />
-          </a>
+          <Link href="/" passHref>
+            <a>
+              <img src={logo} alt={companyName} className="w-16 h-16" />
+            </a>
+          </Link>
         </div>
         <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-4 h-12">
           {sections.map((section, index) => (
