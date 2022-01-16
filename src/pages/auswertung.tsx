@@ -460,7 +460,7 @@ const Evaluation = () => {
             <p className="mt-8 text-xl text-gray-500 leading-8">
               Mittels einer Online-Umfrage wurden Coworking-Potenziale im Rangau
               erfasst. <br />
-              Die Teilnahme ist weiterhin{' '}
+              Die Teilnahme an der Umfrage ist weiterhin{' '}
               <LinkInPage
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeOwEoOFLSm8ROR5Np8E2EsB9RHY7bSZU5cRtRQ0D71l5GuCA/viewform?usp=sf_link"
                 target="_blank"
@@ -517,7 +517,7 @@ const Evaluation = () => {
             </div>
             <div id="residence" className="pt-12">
               <h3>Wohnort</h3>
-              <div className="h-96">
+              <div className="h-72 xl:h-96">
                 <GreenPie data={dataResidentPie} hideLegend={true} />
               </div>
               <p>
@@ -528,7 +528,7 @@ const Evaluation = () => {
             </div>
             <div id="age" className="pt-12">
               <h3>Alter</h3>
-              <div className="h-96">
+              <div className="h-[40rem]">
                 <GreenBar
                   data={dataAgeBar}
                   keys={['Anzahl']}
@@ -559,7 +559,7 @@ const Evaluation = () => {
             </div>
             <div id="employment" className="pt-12">
               <h3>Beschäftigung</h3>
-              <div className="h-96">
+              <div className="h-72 xl:h-96">
                 <GreenPie data={dataEmploymentPie} hideLegend={true} />
               </div>
               <p>
@@ -630,6 +630,8 @@ const Evaluation = () => {
                   data={dataSatisfactionBar1}
                   keys={['Anteil']}
                   indexBy={'SatisfactionCategory'}
+                  customValueFormat="%"
+                  label={(d) => `${d.value}%`}
                   axisBottom={{
                     tickSize: 5,
                     tickPadding: 5,
@@ -659,6 +661,8 @@ const Evaluation = () => {
                   data={dataSatisfactionBar2}
                   keys={['Anteil']}
                   indexBy={'label'}
+                  customValueFormat="%"
+                  label={(d) => `${d.value}%`}
                   axisBottom={{
                     tickSize: 5,
                     tickPadding: 5,
@@ -688,7 +692,7 @@ const Evaluation = () => {
             </div>
             <div id="interest-coworking" className="pt-12">
               <h3>Interesse bzgl. Coworking-Nutzung</h3>
-              <div className="h-96">
+              <div className="h-72 xl:h-96">
                 <GreenPie
                   data={dataCoworkingPie}
                   colors={[nivoGreensReversed[0], nivoGreensReversed[4]]}
@@ -708,6 +712,7 @@ const Evaluation = () => {
                   data={dataWorkingActivityPie}
                   colors={nivoGreensReversed}
                   hideLegend={true}
+                  customValueFormat="%"
                 />
               </div>
               <p>
@@ -722,7 +727,7 @@ const Evaluation = () => {
             </div>
             <div id="expectations-coworking" className="pt-12">
               <h3>Erwartungen an Coworking</h3>
-              <div className="h-96">
+              <div className="h-72 xl:h-96">
                 <GreenPie
                   data={dataExpectationsCoworkingPie}
                   legendPosition="bottom-left"
@@ -739,7 +744,7 @@ const Evaluation = () => {
             </div>
             <div id="support-employeer" className="pt-12">
               <h3>Unterstützung durch Arbeitgeber für mobiles Arbeiten</h3>
-              <div className="h-96">
+              <div className="h-72 xl:h-96">
                 <GreenPie
                   data={dataSupportEmployeerPie}
                   colors={[
@@ -748,6 +753,7 @@ const Evaluation = () => {
                     nivoGreensReversed[5],
                   ]}
                   hideLegend={true}
+                  customValueFormat="%"
                 />
               </div>
               <p>
