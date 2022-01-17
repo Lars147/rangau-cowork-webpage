@@ -422,7 +422,7 @@ const Evaluation = () => {
                 Auswertung
               </span>
               <span className="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                Coworking Umfrage 2021/22
+                Coworking Umfrage 2022
               </span>
             </h1>
             <div className="rounded-md bg-yellow-50 p-4 m-4">
@@ -779,7 +779,7 @@ const Evaluation = () => {
               Rangau. Besonders die Aspekte{' '}
               <HighlightText text="Gemeinschaft" /> und{' '}
               <HighlightText text="Ausstattung" /> sind das Erfolgsgeheimnis
-              eines Coworking-Spaces im Rangau. Bei{' '}
+              eines Coworking-Spaces in der Region. Bei{' '}
               <HighlightText text="Fragen zur Umsetzung" /> stehen wir Ihnen
               jederzeit beratend zur Verfügung. Ebenso freuen wir uns über{' '}
               <HighlightText text="Diskussion" /> und Anfragen zur{' '}
